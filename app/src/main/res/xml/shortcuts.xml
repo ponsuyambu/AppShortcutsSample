@@ -1,0 +1,19 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="compose"
+        android:enabled="true"
+        android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+        android:shortcutShortLabel="@string/short_value"
+        android:shortcutLongLabel="@string/long_value"
+        android:shortcutDisabledMessage="@string/long_value">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="in.ponshere.appshortcuts"
+            android:targetClass="in.ponshere.appshortcuts.BottomNavActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>
